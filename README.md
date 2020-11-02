@@ -1,24 +1,41 @@
-# fbhosting
+> vue.jsを構築後から記述
+> あらかじめ，firabase にプロジェクトを作成
 
-## Project setup
+## プロジェクトディレクトリで，firabese toolsをインストール
+
 ```
-npm install
+npm install -g firebase-tools
 ```
 
-### Compiles and hot-reloads for development
+## firabase にログインする
+```
+firebase login
+```
+
+## firabeseの設定ファイルを作成
+```
+firebase init
+```
+
+> その後，hosting を[space key]で選択し，[enter key]で決定
+> 既存のfirabase プロジェクトを選択する
+
+<!--
 ```
 npm run serve
 ```
+-->
 
-### Compiles and minifies for production
+## 下記コマンドを実行して，firabaseに反映できたことを確認
 ```
 npm run build
 ```
 
-### Lints and fixes files
 ```
-npm run lint
+firebase deploy
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+npm run build
+```
+
